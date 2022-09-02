@@ -1,0 +1,137 @@
+
+body {
+    background: #F8E6E6;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    height: 200vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img{
+    width: 90px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold
+    position: relative;
+    top: -5px
+}
+
+aside h3 {
+    margin-top:50px;
+    font-size: 28px;}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+    text-decoration: none;
+
+}
+
+aside ul li:hover, aside ul a {
+    color: #eb5959;
+    border:0;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+
+main .features {
+    float: left;
+    color; #fff;
+    margin-top: 10px;
+    text-align: center;
+    width: 75%;
+    }
+main .features .news {
+    border: 2px solid #000;
+    background-color: #fff;
+    text-indent: 30px;
+    padding: 10px 20px 10px 20px;
+    margin: 5px auto;
+    width: 800px;
+    }
+main .features strong {font-size: 66px;}
+main .features i {font-size: 40px;}
+main .features p {font-size: 20px;}
+main .features small {font-size: 13px;}
+
+
+
+
+main .features p {max-width: 500px; margin: 15px auto}
+
+main .features .alert-warning {
+    float:  left;
+    clear:  both;
+    width:  400px;
+    margin: 20px 34%;
+    text-align: left;
+    background-color: #fff;
+}
+main .features .alert-warning strong {
+    font-size: 25px;
+}
+main .features p {
+    font-size: 18px;
+}
+
+form {
+    margin-left:32%;
+    width:500px;
+    padding-top:15px;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.register {
+width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+
+a {
+text-decoration: none;
+}
+
+

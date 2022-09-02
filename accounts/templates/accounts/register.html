@@ -1,0 +1,21 @@
+{% extends  'C:\Users\ikoli\PycharmProjects\version_1_dj\version1\main\templates\main\layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <div class="register">
+
+        <form action="." method="post">
+            {% csrf_token %}
+            <h1>Регистрация:</h1>
+            <h1>Ваше имя:</h1>
+            <p>{{ user_form.username }}</p><br>
+            <h1>Придумайте пароль:</h1>
+            <p>{{ user_form.password }}</p><br>
+            <h1>Повторие повтора:</h1>
+            <p>{{ user_form.password2 }}</p><br>
+            <input type="submit" value="Создать аккаунт">
+        </form>
+    </div>
+
+{% endblock %}

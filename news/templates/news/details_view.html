@@ -1,0 +1,33 @@
+
+{% extends 'main/layout.html' %}
+
+
+{% block content %}
+
+    <div class='features'>
+
+        <div class="news">
+        <strong>{{ news_title }}</strong><br>
+        <i>{{ anons }}</i>
+        <p>{{ full_text }}</p>
+        <small>{{ date }}</small>
+        </div>
+
+    <form method="post">
+        <h2>Оставить комментарий</h2>
+        {% csrf_token %}
+        <p>{{ form }}</p>
+        <p><input type="submit" value="Опубликовать"></p>
+    </form>
+
+
+        {% for el in comments %}
+               <div class="alert alert-warning">
+               <strong>{{ el.name }}</strong>
+               <p>{{ el.body }}</p>
+        </div>
+        {% endfor %}
+
+
+    </div>
+{% endblock %}
