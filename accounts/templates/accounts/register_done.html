@@ -1,7 +1,7 @@
-{% extends  'C:\Users\ikoli\PycharmProjects\version_1_dj\version1\main\templates\main\layout.html' %}
+{% extends 'main/layout.html' %}
 {% load crispy_forms_tags %}
 
 {% block content %}
 <h1>Welcome {{ user }}!</h1>
-    <p>Your account has been successfully created. Now you can <a href="{% url "login" %}">log iaaaaan</a>.</p>
+    <p>Your account has been successfully created. Now you can <a href="{% url "login" %}">login</a>.</p>
 {% endblock %}
